@@ -7,7 +7,8 @@ class main
     {
         $fl = 0; // найдет ли нужный метод
         $files = scandir('../Controller'); // список файлов в контроллерами
-        foreach ($files as $v){ // проходимся по всем файлам
+        foreach ($files as $v)
+        { // проходимся по всем файлам
             if(strpos($v,'Controller.php')) // если имя файла соответствует шаблону
             {
                 include '../Controller/'.$v; // подключаем файлы с контроллерами
@@ -29,10 +30,12 @@ class main
         }
 
         end: // пришли по метке
-        if(!$fl){ // если флаг 0 . выводим сообщение что ссылка не найдена
+        if(!$fl)
+        { // если флаг 0 . выводим сообщение что ссылка не найдена
             echo 'Page '.$this->GetMyPath().' not found.';
             die; // умираем
-        }else{ // если метод для пути сущестует
+        }else
+            { // если метод для пути сущестует
             include "../Public/MyTemplater.php"; // подключаем мой шаблонизатор
 
             // передаем основной слой, экшен , ургументы , которые вернул метод
@@ -41,7 +44,8 @@ class main
     }
 
     // получаем адрес страницы
-    private function GetMyPath(){
+    private function GetMyPath()
+    {
         $url = strtolower(explode('?', $_SERVER['REQUEST_URI'])[0]);
         if(substr($url,strlen($url)-1,1) == '/' && strlen($url)>1){
             $url = substr($url,0, strlen($url)-1);
