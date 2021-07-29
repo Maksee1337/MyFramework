@@ -4,7 +4,7 @@ class DefaultController
     /**
      * @author Maks Voytenko <m.voytenko1991@gmail.com>
      * @Route(path="/", name="Default_Index")
-     * @return array[];
+     * @return array[]
      */
     public function Index()
     {
@@ -14,7 +14,7 @@ class DefaultController
     /**
      * @author Maks Voytenko <m.voytenko1991@gmail.com>
      * @Route(path="/About" , name="Default_About")
-     * @return array[];
+     * @return array[]
      */
     public function About()
     {

@@ -1,5 +1,8 @@
 <?php
 
+/**
+ * Class MyTemplater
+ */
 class MyTemplater
 {
     /**

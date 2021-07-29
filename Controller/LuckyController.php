@@ -6,7 +6,7 @@ class LuckyController
     /**
      * @author Maks Voytenko <m.voytenko1991@gmail.com>
      * @Route(path="/Lucky1" , name="Lucky_Lucky1")
-     * @return array[];
+     * @return array[]
      */
     public function Lucky1()
     {
@@ -17,7 +17,7 @@ class LuckyController
     /**
      * @author Maks Voytenko <m.voytenko1991@gmail.com>
      * @Route(path="/Lucky2" , name="Lucky_Lucky2")
-     * @return array[];
+     * @return array[]
      */
     public function Lucky2()
     {
